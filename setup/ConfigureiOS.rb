@@ -24,7 +24,7 @@ module Pod
       prefix = nil
 
       loop do
-          puts '--------- 德一智慧城市 ---------'.green
+          puts '--------- 王大仙最帅 ---------'.green
           puts '--- 模板工程正在加载中，请稍后 ---'.green
         prefix = configurator.ask("What is your class prefix")
 

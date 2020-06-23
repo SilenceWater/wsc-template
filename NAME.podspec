@@ -30,10 +30,12 @@ TODO: Add long description of the pod here.
 
 
  s.dependency 'Masonry'
- s.dependency 'DYSuperKit'
- s.dependency 'DYFoundation'
- s.dependency 'DYNetwork'
- s.dependency 'DZNEmptyDataSet'
+ s.dependency 'XXNetwork'
+ 
+ #s.dependency 'DYSuperKit'
+ #s.dependency 'DYFoundation'
+ #s.dependency 'DYNetwork'
+ #s.dependency 'DZNEmptyDataSet'
  #s.dependency 'YYText'
 
 
