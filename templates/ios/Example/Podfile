@@ -1,0 +1,28 @@
+####################   王大仙Podfile模板   ####################
+
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'http://git.zhcs.com/iOS_Group/DYSpecs.git'
+
+use_frameworks!
+
+platform :ios, '10.0'
+
+target '${POD_NAME}_Example' do
+  pod '${POD_NAME}', :path => '../'
+
+
+  pod 'IQKeyboardManager'
+  pod 'XXNetwork'
+
+
+
+
+#pod 'YYText'
+#pod 'MJRefresh'
+
+  target '${POD_NAME}_Tests' do
+    inherit! :search_paths
+
+    ${INCLUDED_PODS}
+  end
+end
