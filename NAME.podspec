@@ -16,7 +16,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'http://git.zhcs.com/iOS_Group/${POD_NAME}.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = '${POD_NAME}/Classes/**/*'
   
@@ -25,16 +25,14 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit', 'MapKit'  #动态依赖库
+  # s.libraries = 'iconv'  #静态依赖库，不要前边lib和后缀.xxx
   # s.dependency 'AFNetworking', '~> 2.3'
+    
 
-
- s.dependency 'Masonry'
- s.dependency 'XXNetwork'
+ #s.dependency 'Masonry'
  
- #s.dependency 'DYSuperKit'
- #s.dependency 'DYFoundation'
- #s.dependency 'DYNetwork'
+
  #s.dependency 'DZNEmptyDataSet'
  #s.dependency 'YYText'
 
