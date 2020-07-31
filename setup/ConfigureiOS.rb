@@ -25,9 +25,9 @@ module Pod
       platform = configurator.ask_with_answers("输入想要的平台demo", ["ios", "osx"]).to_sym
       case platform
         when :osx
-          puts "对不起osx的demo还没搞完，所以跑的还是ios😃".red
+          puts "\n对不起osx的demo还没搞完，所以跑的还是ios😃\n".red
         when :ios
-          puts "正确的选择！".green
+          puts "\n\n\n正确的选择！\n\n\n".green
           
       end
       
