@@ -16,7 +16,7 @@ module Pod
     def ask(question)
       answer = ""
       loop do
-        puts "\n#{question}?"
+        puts "\n#{question}?".yellow
 
         @message_bank.show_prompt
         answer = gets.chomp
