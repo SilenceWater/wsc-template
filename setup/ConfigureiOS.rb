@@ -20,9 +20,20 @@ module Pod
 
         snapshots = :No
       
+      
+      puts '--- 选择平台，请稍后 ---'.green
+      platform = configurator.ask_with_answers("输入想要的平台demo", ["ios", "osx"]).to_sym
+      case platform
+        when :osx
+          puts "确定选择osx项目 在mac上跑的？".green
+        when :ios
+          puts "正确的选择！".green
+          
+      end
+      
+      
 
       prefix = nil
-      platform = nil
 
       loop do
           puts '--------- 王大仙最帅 ---------'.green
@@ -34,8 +45,7 @@ module Pod
         else
           break
         end
-        puts '--- 模板工程正在加载中，请稍后 ---'.green
-        platform = configurator.ask_with_answers("输入想要的平台demo", ["osx", "ios"]).to_sym
+        
         
       end
       
