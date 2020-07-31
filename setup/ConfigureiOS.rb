@@ -33,15 +33,19 @@ module Pod
         else
           break
         end
+#        platform = configurator.ask("What is your class prefix")
+        
+        
       end
+      
 
-      Pod::ProjectManipulator.new({
-        :configurator => @configurator,
-        :xcodeproj_path => "templates/ios/Example/PROJECT.xcodeproj",
-        :platform => :ios,
-        :remove_demo_project => (keep_demo == :no),
-        :prefix => prefix
-      }).run
+#      Pod::ProjectManipulator.new({
+#        :configurator => @configurator,
+#        :xcodeproj_path => "templates/ios/Example/PROJECT.xcodeproj",
+#        :platform => :ios,
+#        :remove_demo_project => (keep_demo == :no),
+#        :prefix => prefix
+#      }).run
       
       Pod::ProjectManipulator.new({
         :configurator => @configurator,
