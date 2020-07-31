@@ -26,7 +26,7 @@ module Pod
       loop do
           puts '--------- 王大仙最帅 ---------'.green
           puts '--- 模板工程正在加载中，请稍后 ---'.green
-        prefix = configurator.ask("What is your class prefix")
+        prefix = configurator.ask("设置下你的项目前缀")
 
         if prefix.include?(' ')
           puts 'Your class prefix cannot contain spaces.'.red
