@@ -34,9 +34,8 @@ module Pod
         else
           break
         end
-#        platform = configurator.ask("What is your class prefix")
         puts '--- 模板工程正在加载中，请稍后 ---'.green
-        platform = configurator.ask_with_answers("输入想要的平台demo", ["ios", "osx"]).to_sym
+        platform = configurator.ask_with_answers("输入想要的平台demo", ["osx", "ios"]).to_sym
         
       end
       
