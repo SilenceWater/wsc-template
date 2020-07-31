@@ -1,0 +1,13 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://gitee.com/lazyMonster/LSSpecs.git'
+
+
+platform :macos, '10.10'
+inhibit_all_warnings!
+
+target '${POD_NAME}_Example-osx' do
+  pod '${POD_NAME}', :path => '../'
+
+
+end
+
